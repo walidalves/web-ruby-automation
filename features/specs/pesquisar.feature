@@ -9,14 +9,12 @@
      @pesquisar_sucesso
      @smoke
      Cenário: Pesquisar artigo com sucesso
-     Dado que acesso o cadastro de usuário
-     E preencho os campos do formulário com dados válidos de pessoa física
-     Quando confirmo o cadastro
-     Então o sistema deve exibir a mensagem de boas vindas
+     Dado que acesso o blog do Agi
+     Quando pesquiso uma palavra do nome do artigo
+     Então o website exibir o resultado buscado
 
     @pesquisar_sem_retorno
      Cenário: Pesquisar artigo sem retorno 
-     Dado que acesso o cadastro de usuário
-     E preencho os campos do formulário com dados válidos de pessoa física
-     Quando confirmo o cadastro
-     Então o sistema deve exibir a mensagem de boas vindas
+     Dado que acesso o blog do Agi
+     Quando pesquiso algo inválido
+     Então o website deve exibir uma mensagem que não foram encontrados resultados.
