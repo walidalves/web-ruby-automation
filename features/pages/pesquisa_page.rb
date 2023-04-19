@@ -3,6 +3,7 @@ class PesquisaPage < SitePrism::Page
     element :btn_abrir_busca, '#search-open'
     element :input_campo, '#masthead > div.site-header-content > div.desktop-search > form > label > input'
     element :btn_buscar, '#masthead > div.site-header-content > div.desktop-search > form > input'
+    element :list_page, '#primary > nav > div > span.page-numbers.current'
 
     def abrir_campo_busca
         btn_abrir_busca.click
