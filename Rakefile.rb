@@ -20,3 +20,8 @@ desc 'Execute Seach Tests without Success'
 task :pesquisar_sem_resultado do
   sh 'bundle exec cucumber -t @pesquisar_sem_resultado'
 end
+
+desc 'Execute Seach Tests Empty Search'
+task :pesquisar_vazio do
+  sh 'bundle exec cucumber -t @pesquisar_vazio'
+end
