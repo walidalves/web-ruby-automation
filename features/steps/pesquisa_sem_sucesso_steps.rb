@@ -4,8 +4,7 @@ Quando('pesquiso algo inválido') do
 end
   
 Então('o website deve exibir uma mensagem que não foram encontrados resultados') do
+    @pesquisa_page.wait_until_msg_nenhum_resultado_visible
     expect(@pesquisa_page).to have_content 'Nenhum resultado'
-    expect(@pesquisa_page).to have_content 'Não encontramos nada para estes termos de busca. Tente novamente com palavras-chave diferentes.'
-    #verifica se existe um elemento com a classe no-results-info na página, e se está visível.
-    expect(@pesquisa_page).to have_css('.no-results-info', visible: true)
+    expect(@pesquisa_page).to have_content 'Não encontramos nada para estes termos de busca. Tente novamente com palavras-chave diferentes.'  
 end
