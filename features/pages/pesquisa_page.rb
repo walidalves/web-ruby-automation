@@ -12,6 +12,10 @@ class PesquisaPage < SitePrism::Page
         input_campo.set 'Banco'
     end
 
+    def preencher_campo_dados_invalidos
+        input_campo.set 'One Piece, o tesouro deixado por Gold Roger'
+    end
+
     def clicar_finalizar
         btn_buscar.click
     end
